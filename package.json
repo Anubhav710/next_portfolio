@@ -26,6 +26,7 @@
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sharp": "^0.32.3",
+    "tailwind-scrollbar": "^3.0.4",
     "tailwindcss": "3.3.3",
     "three": "^0.154.0",
     "typescript": "5.1.6"

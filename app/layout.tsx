@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} `}>{children}</body>
+      <body
+        className={`${inter.className}  scrollbar-track-gray-400/20 scrollbar-thumb-[#915eff]/80  scrollbar-thin `}
+      >
+        {children}
+      </body>
     </html>
   )
 }

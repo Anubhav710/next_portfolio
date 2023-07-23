@@ -52,6 +52,9 @@ dependencies:
   sharp:
     specifier: ^0.32.3
     version: 0.32.3
+  tailwind-scrollbar:
+    specifier: ^3.0.4
+    version: 3.0.4(tailwindcss@3.3.3)
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -67,8 +70,8 @@ devDependencies:
     specifier: ^3.3.3
     version: 3.3.3
   maath:
-    specifier: ^0.7.0
-    version: 0.7.0(@types/three@0.154.0)(three@0.154.0)
+    specifier: ^0.5.2
+    version: 0.5.3(@types/three@0.154.0)(three@0.154.0)
 
 packages:
 
@@ -2191,6 +2194,16 @@ packages:
       yallist: 4.0.0
     dev: false
 
+  /maath@0.5.3(@types/three@0.154.0)(three@0.154.0):
+    resolution: {integrity: sha512-ut63A4zTd9abtpi+sOHW1fPWPtAFrjK0E17eAthx1k93W/T2cWLKV5oaswyotJVDvvW1EXSdokAqhK5KOu0Qdw==}
+    peerDependencies:
+      '@types/three': '>=0.144.0'
+      three: '>=0.144.0'
+    dependencies:
+      '@types/three': 0.154.0
+      three: 0.154.0
+    dev: true
+
   /maath@0.6.0(@types/three@0.154.0)(three@0.154.0):
     resolution: {integrity: sha512-dSb2xQuP7vDnaYqfoKzlApeRcR2xtN8/f7WV/TMAkBC8552TwTLtOO0JTcSygkYMjNDPoo6V01jTw/aPi4JrMw==}
     peerDependencies:
@@ -2200,16 +2213,6 @@ packages:
       '@types/three': 0.154.0
       three: 0.154.0
     dev: false
-
-  /maath@0.7.0(@types/three@0.154.0)(three@0.154.0):
-    resolution: {integrity: sha512-JQ1JZrQLDgJ59snCk2AcSb/jdGwNgGQXlLcfZChN8lmpMR7g3bpMM3ugcqGfU1ROwjVvX5CvcVJHc8TkxljG8Q==}
-    peerDependencies:
-      '@types/three': '>=0.144.0'
-      three: '>=0.144.0'
-    dependencies:
-      '@types/three': 0.154.0
-      three: 0.154.0
-    dev: true
 
   /merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -3159,6 +3162,15 @@ packages:
     dependencies:
       '@pkgr/utils': 2.4.2
       tslib: 2.6.0
+    dev: false
+
+  /tailwind-scrollbar@3.0.4(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-X/QBsn/C5u9x6/YvTc1Zo7b09Gqs5BfDe0UK/8LDQUv8IEBKF+p2ISTRwvAr50MH0hn/wTyCEOann7uXoa1/2Q==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: 3.x
+    dependencies:
+      tailwindcss: 3.3.3
     dev: false
 
   /tailwindcss@3.3.3:
