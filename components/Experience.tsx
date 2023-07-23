@@ -11,6 +11,7 @@ import { styles } from "@/styles"
 import { experiences } from "@/constants"
 import { experienceProp } from "@/types"
 import Image from "next/image"
+import { SectionWrapper } from "./hoc"
 const ExperienceCard = (experience: experienceProp): any => {
   return (
     <VerticalTimelineElement
@@ -50,7 +51,7 @@ const ExperienceCard = (experience: experienceProp): any => {
 
 const Experience = () => {
   return (
-    <div id="work" className={`${styles.padding} max-w-[82rem] mx-auto  `}>
+    <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>WHAT I HAVE DONE SO FAR</p>
         <h2 className={`${styles.sectionHeadText}`}>Work Experience.</h2>
@@ -62,8 +63,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </div>
+    </>
   )
 }
 
-export default Experience
+export default SectionWrapper(Experience, "work")

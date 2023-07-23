@@ -9,6 +9,7 @@ import { github } from "@/public/images"
 import { projects } from "@/constants"
 import { fadeIn, textVariant } from "@/utils/motion"
 import Image from "next/image"
+import { SectionWrapper } from "./hoc"
 
 const ProjectCard = ({
   index,
@@ -99,4 +100,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default SectionWrapper(Works, "")

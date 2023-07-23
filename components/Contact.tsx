@@ -3,12 +3,13 @@ import { styles } from "@/styles"
 import { slideIn } from "@/utils/motion"
 import { motion } from "framer-motion"
 import EarthCanvas from "./canvas/EarthCanvas"
+import { SectionWrapper } from "./hoc"
 
 const Contact = () => {
   return (
-    <div id="contact" className={`${styles.padding} max-w-[82rem] mx-auto  `}>
+    <>
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden border`}
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
@@ -62,8 +63,8 @@ const Contact = () => {
           <EarthCanvas />
         </motion.div>
       </div>
-    </div>
+    </>
   )
 }
 
-export default Contact
+export default SectionWrapper(Contact, "contact")

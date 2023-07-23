@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import { fadeIn, textVariant } from "@/utils/motion"
 import { styles } from "@/styles"
 import Image from "next/image"
-import SectionWrapper from "./hoc/SectionWrapper"
+import { SectionWrapper } from "./hoc"
 
 const ServiceCard = ({ icon, title, index }: any) => {
   return (
@@ -35,7 +35,7 @@ const ServiceCard = ({ icon, title, index }: any) => {
 
 const About = () => {
   return (
-    <div id="about" className={`${styles.padding} max-w-[82rem] mx-auto  `}>
+    <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>INTRODUCTION</p>
         <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
@@ -57,8 +57,8 @@ const About = () => {
           <ServiceCard key={services.title} {...services} index={index} />
         ))}
       </div>
-    </div>
+    </>
   )
 }
 
-export default About
+export default SectionWrapper(About, "about")
