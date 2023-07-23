@@ -1,4 +1,5 @@
-import Image from "next/image"
+"use client"
+
 import {
   Hero,
   Navbar,
@@ -6,18 +7,21 @@ import {
   Experience,
   Tech,
   Works,
-  Feedback,
   Contact,
   StarCanvas,
 } from "@/components"
+import { useEffect } from "react"
 
 export default function Home() {
   return (
     <main className="relative z-0 bg-primary space-y-10  ">
-      <div className={`bg-hero-pattern bg-cover bg-no-repeat bg-center`}>
+      <div
+        className={`bg-hero-pattern bg-cover bg-no-repeat bg-center h-screen `}
+      >
         <Navbar />
         <Hero />
       </div>
+
       <About />
       <Experience />
       <Tech />

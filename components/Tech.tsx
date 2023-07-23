@@ -1,3 +1,4 @@
+"use client"
 import { technologies } from "@/constants"
 import { styles } from "@/styles"
 import React from "react"
