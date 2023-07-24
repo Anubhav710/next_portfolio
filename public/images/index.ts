@@ -9,6 +9,8 @@ import close from "./close.svg"
 
 import css from "./tech/css.png"
 import docker from "./tech/docker.png"
+import next from "./tech/nextjs.svg"
+import framer from "./tech/framermotion.svg"
 import figma from "./tech/figma.png"
 import git from "./tech/git.png"
 import html from "./tech/html.png"
@@ -62,4 +64,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  next,
+  framer,
 }

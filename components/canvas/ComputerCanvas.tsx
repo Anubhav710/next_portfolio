@@ -5,7 +5,7 @@ import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import CanvasLorder from "./CanvasLorder"
 const Computer = () => {
-  const computerimg = useGLTF("/3d_model/gaming_desktop_pc/scene.gltf")
+  const computerimg = useGLTF("/3d_model/desktop_pc/scene.gltf")
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
