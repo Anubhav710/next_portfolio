@@ -5,6 +5,7 @@ import {
   backend,
   creator,
   web,
+  ai,
   javascript,
   typescript,
   html,
@@ -35,8 +36,8 @@ export const navLinks = [
   },
   {
     key: 2,
-    id: "#work",
-    title: "Work",
+    id: "#skill",
+    title: "skills",
   },
   {
     key: 3,
@@ -122,12 +123,7 @@ const experiences = [
     icon: next,
     iconBg: "#383E56",
     date: "March 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    points: [],
   },
   {
     title: "Styles",
@@ -135,12 +131,7 @@ const experiences = [
     icon: tailwind,
     iconBg: "#E6DEDD",
     date: "March 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    points: [],
   },
   {
     title: "Animation",
@@ -148,12 +139,7 @@ const experiences = [
     icon: framer,
     iconBg: "#383E56",
     date: "March 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    points: [],
   },
   {
     title: "3D Graphics",
@@ -161,12 +147,7 @@ const experiences = [
     icon: threejs,
     iconBg: "#E6DEDD",
     date: "March 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    points: [],
   },
 ]
 
@@ -204,62 +185,42 @@ const projects = [
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "Next-js",
         color: "blue-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
+
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Anubhav710/cars_showcase",
   },
   {
-    name: "Job IT",
+    name: "AI-Genius",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to use various Ai tools like Ai image generation, Ai video generation and Ai code generation etc. It provide effective solutions.",
     tags: [
       {
-        name: "react",
+        name: "Next-js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "shadcn/ui",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "stripe",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "clerk",
+        color: "red-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: ai,
+    source_code_link: "https://github.com/Anubhav710/ai-saas-project",
   },
 ]
 

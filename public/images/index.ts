@@ -34,7 +34,10 @@ import tripguide from "./tripguide.png"
 
 import bgimage from "./herobg.png"
 
+import ai from "./ai.png"
+
 export {
+  ai,
   bgimage,
   logo,
   backend,
