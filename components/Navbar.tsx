@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-[82rem] mx-auto px-2">
         <Link
           href="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 "
           onClick={() => {
             setActive("")
             window.scrollTo(0, 0)
@@ -50,10 +50,11 @@ const Navbar = () => {
             className="object-contain"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Anubhav &nbsp;<span>| Web Developer</span>
+            Anubhav &nbsp;
+            <span className="block lg:inline">| Web Developer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10 ">
+        <ul className="list-none hidden sm:flex flex-row gap-10 sm:items-center items-center ">
           {navLinks.map((link) => (
             <li
               key={link.key}
@@ -65,7 +66,14 @@ const Navbar = () => {
               <Link href={link.id}>{link.title}</Link>
             </li>
           ))}
+          <button
+            className=" border border-[#915eff] rounded-md px-4 py-2 hover:bg-[#915eff] transition-all duration-700 "
+            onClick={() => window.open("/Resume.png")}
+          >
+            Resume
+          </button>
         </ul>
+
         {/* Mobile Navigation Bar */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
@@ -96,6 +104,12 @@ const Navbar = () => {
                   <Link href={link.id}>{link.title}</Link>
                 </li>
               ))}
+              <button
+                className="text-white"
+                onClick={() => window.open("/Resume.png")}
+              >
+                Resume
+              </button>
             </ul>
           </div>
         </div>

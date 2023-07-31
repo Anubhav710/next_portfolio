@@ -196,6 +196,8 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/Anubhav710/cars_showcase",
+    website_link:
+      "https://cars-showcase-qs2v2fvjx-anubhav710.vercel.app/?vercelToolbarCode=vCtK5O8whvFSboy",
   },
   {
     name: "AI-Genius",
@@ -221,6 +223,7 @@ const projects = [
     ],
     image: ai,
     source_code_link: "https://github.com/Anubhav710/ai-saas-project",
+    website_link: "https://ai-saas-k94wd9gl9-anubhav710.vercel.app/",
   },
 ]
 

@@ -10,6 +10,7 @@ import { projects } from "@/constants"
 import { fadeIn, textVariant } from "@/utils/motion"
 import Image from "next/image"
 import { SectionWrapper } from "./hoc"
+import Link from "next/link"
 
 const ProjectCard = ({
   index,
@@ -18,6 +19,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  website_link,
 }: any) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -49,6 +51,14 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
+        <div className=" absolute right-7 bottom-40">
+          <button
+            onClick={() => window.open(website_link)}
+            className="border px-4  rounded-lg hover:bg-white/50 cursor-pointer"
+          >
+            Vist
+          </button>
+        </div>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
@@ -57,12 +67,14 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag: any) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
+            <>
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            </>
           ))}
         </div>
       </Tilt>
