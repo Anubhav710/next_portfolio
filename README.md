@@ -1,4 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Live View- https://portfolio-knutxxhc1-anubhav710.vercel.app/
+
+![Screenshot 2023-07-30 182922](https://github.com/Anubhav710/next_portfolio/assets/100343499/6d00fc6d-8297-4560-9c62-6f2b0e0474b0)
+
+
+
+
+![Screenshot 2023-07-30 182958](https://github.com/Anubhav710/next_portfolio/assets/100343499/4ae3509c-4d03-4231-ac88-0244a611d4ef)
+
+
+
+![Screenshot 2023-07-30 183014](https://github.com/Anubhav710/next_portfolio/assets/100343499/8257191e-aae3-4961-adff-572194046b05)
+
+This is a [Next.![Uploading Screenshot 2023-07-30 182922.png…]()
+js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
